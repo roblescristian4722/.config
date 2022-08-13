@@ -10,5 +10,6 @@
 !dunst
 !nvim
 !zsh
+!rofi
 !install_dependencies.sh
 !README.md

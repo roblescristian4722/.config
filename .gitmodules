@@ -16,3 +16,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = git@github.com:roblescristian4722/zsh.git
+[submodule "rofi"]
+	path = rofi
+	url = git@github.com:roblescristian4722/rofi.git
