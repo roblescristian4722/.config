@@ -1,5 +1,10 @@
 #!/bin/sh
 
+CONFIG_DIR=".config"
+CONFIG_TMP_DIR=".config_tmp"
+GITHUB_REPO="https://github.com/roblescristian4722/.config.git"
+YAY_REPO="https://aur.archlinux.org/yay.git"
+
 Base() {
     # Installs basic dependencies for yay
     pacman -S --needed git base-devel nodejs rust go curl wget
@@ -7,7 +12,7 @@ Base() {
 
 Yay() {
     # Clones yay repository
-    git clone https://aur.archlinux.org/yay.git
+    git clone $YAY_REPO
 
     # Builds and isntalls yay
     cd yay
@@ -17,10 +22,11 @@ Yay() {
 Submodules() {
     # Installs submodules
     yay -S polybar i3-gaps i3lock dunst rofi
-    mkdir .config_tmp
-    git clone --recurse-submodules git@github.com:roblescristian4722/.config.git .config_tmp
-    cp -rf .config_tmp/* .config
-    rm -rf .config_tmp
+    mkdir $CONFIG_TMP_DIR
+    mkdir -p $CONFIG_DIR
+    git clone --recurse-submodules $GITHUB_REPO $CONFIG_TMP_DIR
+    cp -rf $CONFIG_TMP_DIR/* $CONFIG_DIR
+    rm -rf $CONFIG_TMP_DIR
 }
 
 All() {
