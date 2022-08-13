@@ -1,0 +1,12 @@
+# Exclude everything
+*
+
+# Except:
+!.gitignore
+!.gitsubmodules
+!polybar
+!i3
+!picom
+!dunst
+!nvim
+!README.md

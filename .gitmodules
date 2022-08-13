@@ -1,0 +1,15 @@
+[submodule "picom"]
+	path = picom
+	url = git@github.com:roblescristian4722/picom.git
+[submodule "i3"]
+	path = i3
+	url = git@github.com:roblescristian4722/i3.git
+[submodule "dunst"]
+	path = dunst
+	url = git@github.com:roblescristian4722/dunst.git
+[submodule "polybar"]
+	path = polybar
+	url = git@github.com:roblescristian4722/polybar.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:roblescristian4722/nvim.git
