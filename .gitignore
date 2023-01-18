@@ -1,15 +1,5 @@
-# Exclude everything
+# Ignore everything
 *
 
-# Except:
-!.gitignore
-!.gitsubmodules
-!polybar
-!i3
-!picom
-!dunst
-!nvim
-!zsh
-!rofi
-!install_dependencies.sh
-!README.md
+# Except...
+install_dependencies.sh
